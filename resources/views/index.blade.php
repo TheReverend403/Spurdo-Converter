@@ -21,21 +21,18 @@
         <tr>
             <th>Parameter</th>
             <th>Description</th>
-            <th>Type</th>
             <th>Default</th>
             <th>Required?</th>
         </tr>
         <tr>
             <td>text</td>
             <td>The text to spurdo-ify.</td>
-            <td>String</td>
             <td></td>
             <td>Yes</td>
         </tr>
         <tr>
             <td>ebinfaces</td>
             <td>Include ebin faces in your spurdo text.</td>
-            <td>Boolean</td>
             <td>true</td>
             <td>No</td>
         </tr>
