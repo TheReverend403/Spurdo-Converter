@@ -8,7 +8,7 @@
     <meta name="author" content="Lee Watson">
     <meta name="description" content="wat de fugg">
     <meta name="keywords" content="spurdo">
-    <link rel="shortcut icon" href="{{ url('assets/img/favicon.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ url('assets/img/spurdo.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
 </head>
 <body>
