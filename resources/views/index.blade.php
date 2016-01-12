@@ -15,6 +15,7 @@
     <div style="text-align: center">
         <h1>Welcome to the Spurdo Converter</h1>
         <p>To use this converter, simply make a HTTP GET request to <a href="{{ route('api') }}">{{ route('api') }}</a> with the parameters from the table below.</p>
+        <p>Example: <a href="{{ route('api', ['text' => 'what the fuck']) }}">{{ route('api', ['text' => 'what the fuck']) }}</a></p>
     </div>
     <table style="margin-left: auto; margin-right: auto;" border="1">
         <tr>
