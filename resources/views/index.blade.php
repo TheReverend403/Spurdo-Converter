@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
 </head>
 <body>
-    <div style="text-align: center">
+    <div class="text-center">
         <h1>Welcome to the Spurdo Converter</h1>
         <p>To use this converter, simply make a HTTP GET request to <a href="{{ route('api') }}">{{ route('api') }}</a> with the parameters from the table below.</p>
         <p>Example: <a href="{{ route('api', ['text' => 'what the fuck']) }}">{{ route('api', ['text' => 'what the fuck']) }}</a></p>
     </div>
-    <table style="margin-left: auto; margin-right: auto;" border="1">
+    <table class="center" border="1">
         <tr>
             <th>Parameter</th>
             <th>Description</th>
@@ -40,7 +40,7 @@
             <td>No</td>
         </tr>
     </table>
-    <div style="text-align: center">
+    <div class="text-center">
         <p>On success, the API will return a JSON object with two keys: status and text.<br>Status will always be 0 on success, and text will be the spurdo-ified version of whatever your text paremeter was.</p>
         <p>Example: {{ json_encode(['status' => 0, 'text' => 'wat de fugg']) }}</p>
         <p>On error, the API will return a JSON object with two keys: status and error.<br>Status will always be 1 on error, and error will be a string describing what went wrong.</p>
