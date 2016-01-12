@@ -8,7 +8,7 @@
     <meta name="author" content="Lee Watson">
     <meta name="description" content="wat de fugg">
     <meta name="keywords" content="spurdo">
-    <link rel="shortcut icon" href="{{ url('assets/img/spurdo.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ url('assets/img/favicon.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
 </head>
 <body>
@@ -46,7 +46,7 @@
         <p>On error, the API will return a JSON object with two keys: status and error.<br>Status will always be 1 on error, and error will be a string describing what went wrong.</p>
         <p>Example: {{ json_encode(['status' => 1, 'error' => 'missing_required_parameter: text']) }}</p>
 
-        <img src="{{ url('assets/img/favicon.png') }}" alt="spurdo">
+        <img src="{{ url('assets/img/spurdo.png') }}" alt="spurdo">
         <p>Source code: <a href="https://github.com/TheReverend403/Spurdo-Converter">https://github.com/TheReverend403/Spurdo-Converter</a></p>
     </div>
 </body>
