@@ -79,11 +79,7 @@ class ApiController extends Controller
             $text = str_replace($match, $replacement, $text);
         }
 
-        $ebinFaces = true;
-        if ($request->has('ebinfaces')) {
-            $ebinFaces = $request->input('ebinfaces');
-        }
-
+        $ebinFaces = $request->input('ebinfaces', true);
         if ($ebinFaces === true) {
             while (preg_match('/\.|,|\?|!(?=\s|$|\.)/m', $text)) {
                 $text = preg_replace('/\.|,|\?|!(?=\s|$|\.)/m',
