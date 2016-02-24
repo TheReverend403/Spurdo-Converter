@@ -8,6 +8,9 @@ use Symfony\Component\HttpFoundation\Response as Res;
 class ApiController extends Controller
 {
     const SPURDO_REPLACEMENTS = [
+        'kek'  => 'geg',
+        'some' => 'sum',
+        'meme' => 'maymay',
         'epic' => 'ebin',
         'wh'   => 'w',
         'th'   => 'd',
@@ -55,10 +58,8 @@ class ApiController extends Controller
         'ing'  => 'ign',
         'ic'   => 'ig',
         'ng'   => 'nk',
-        'kek'  => 'geg',
-        'some' => 'sum',
-        'meme' => 'maymay',
     ];
+
     const EBIN_FACES = [':D', ':DD', ':DDD', ':-D', 'XD', 'XXD', 'XDD', 'XXDD', 'xD', 'xDD', ':dd'];
 
     public function index(Request $request)
@@ -99,6 +100,6 @@ class ApiController extends Controller
 
         $response['text'] = $text;
 
-        return response($response, Res::HTTP_OK);
+        return response($response);
     }
 }
